@@ -1,9 +1,10 @@
 
 <body>
+  <div></div>
   <script>
     const frame = '<iframe src="https://augtera.dev/widget?viewName=InterRegion&token=" width="100%" height="682"></iframe>'
 
-    const body = document.getElementsByTagName("body")[0];
-    body.append(frame);
+    const body = document.getElementsByTagName("div")[0];
+    body.innerHTML(frame);
   </script>
 </body>
