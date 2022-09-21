@@ -35,12 +35,12 @@
               "x-api-key": "API_KEY"
           },
           body: JSON.stringify({
-            username: "ui-test",
+            username: "readOnlyUser",
             role: "readOnly"
           })
         }).then(resp => resp.json()).then(({token}) => {
           document.getElementsByTagName("div")[0].innerHTML = (
-            '<iframe src="https://augtera.dev/widget?viewName=InterRegion&token=' + token + '" width="100%" height="1906" frameborder="0" scrolling="no"></iframe>'
+            '<iframe src="https://augtera.dev/widget?viewName=dashboard_v2&token=' + token + '" width="100%" height="1906" frameborder="0" scrolling="no"></iframe>'
           )
         });
       
